@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weekly Plan</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="d-flex justify-content-center align-items-center">
+    <div class="container">
+      <h1>Weekly Plan</h1>
+      <h2>Al mostakbal Modern School</h2>
+
+      <form class="weekly-plan-form">
+        <div class="form-group">
+          <label for="month">Year and Month:</label>
+          <input type="month" id="month" name="month" />
+        </div>
+
+        <div class="form-group">
+          <label for="week">Week:</label>
+          <select id="week" name="week">
+            <optgroup label="Select Week">
+              <option value="First">First Week</option>
+              <option value="second">Second Week</option>
+              <option value="Third">Third Week</option>
+              <option value="Fourth">Fourth Week</option>
+              <option value="Fifth">Fifth Week</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject:</label>
+          <select id="subject" name="subject">
+            <option value="">Select a subject</option>
+            <option selected disabled>Select Subject</option>
+            <option value="Arabic">Arabic</option>
+            <option value="english">English</option>
+            <option value="Math">Math</option>
+            <option value="Science">Science</option>
+            <option value="french">French</option>
+            <option value="German">German</option>
+            <option value="Combined Scince">Combined Science</option>
+            <option value="Chemistry">Chemistry</option>
+            <option value="Physics">Physics</option>
+            <option value="Biology">Biology</option>
+            <option value="History">History</option>
+            <option value="Geopraphy">Geopraphy</option>
+            <option value="Philosophy">Philosophy</option>
+            <option value="Psycholohy">Psychology</option>
+            <option value="Religion">Religion</option>
+            <option value="Quran">Quran</option>
+            <option value="LCT">ICT</option>
+            <option value="HEC">HEC</option>
+            <option value="Music">Music</option>
+            <option value="Art">Art</option>
+            <option value="P.E">P.E</option>
+            <option value="Libaary">Library</option>
+            <option value="Skills">Skills</option>
+            <option value="Social">Social</option>
+            <option value="Values">Values</option>
+            <optgroup label="KG-1">
+              <option value="english">English</option>
+              <option value="phonics">Phonics</option>
+              <option value="arabic">Arabic</option>
+              <option value="maths">Maths</option>
+              <option value="science">Science</option>
+              <option value="french">French</option>
+              <option value="religion">Religion</option>
+              <option value="art">Art</option>
+              <option value="pe">PE</option>
+              <option value="music">Music</option>
+            </optgroup>
+            <optgroup label="KG-2">
+              <option value="english">English</option>
+              <option value="phonics">Phonics</option>
+              <option value="arabic">Arabic</option>
+              <option value="maths">Maths</option>
+              <option value="science">Science</option>
+              <option value="french">French</option>
+              <option value="religion">Religion</option>
+              <option value="art">Art</option>
+              <option value="pe">PE</option>
+              <option value="music">Music</option>
+              <option value="mental_math">Mental Math</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <!-- إضافة selector للفصول -->
+        <div class="form-group">
+          <label for="classroom">Grade:</label>
+          <select id="classroom" name="classroom">
+            <option value="">Select a classroom</option>
+            <optgroup label="KG-1">
+              <option value="Moana">Moana</option>
+              <option value="Trolls">Trolls</option>
+              <option value=" Brave">Brave</option>
+            </optgroup>
+            <optgroup label="KG-2">
+              <option value="Peter pan">Peter pan</option>
+              <option value="Snowwhite">Snowwhite</option>
+              <option value="Mowgli">Mowgli</option>
+              <option value="Crackers">Crackers</option>
+            </optgroup>
+            <optgroup label="Primary">
+              <option value="1a">1a</option>
+              <option value="1b">1b</option>
+              <option value="1c">1c</option>
+              <option value="2a">2a</option>
+              <option value="2b">2b</option>
+              <option value="2c">2c</option>
+              <option value="3a">3a</option>
+              <option value="3b">3b</option>
+              <option value="3c">3c</option>
+              <option value="4a">4a</option>
+              <option value="4b">4b</option>
+              <option value="4c">4c</option>
+              <option value="4d">4d</option>
+              <option value="5a">5a</option>
+              <option value="5b">5b</option>
+              <option value="5c">5c</option>
+              <option value="6a">6a</option>
+              <option value="6b">6b</option>
+            </optgroup>
+            <optgroup label="PREP">
+              <option value="prep1a">1a</option>
+              <option value="prep1b">1b</option>
+              <option value="prep2a">2a</option>
+              <option value="prep2b">2b</option>
+              <option value="p3">p3</option>
+            </optgroup>
+            <optgroup label="High">
+              <option value="sec1">sec1</option>
+              <option value="sec2">sec2</option>
+              <option value="sec3">sec3</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="sunday-plan">Sunday Plan:</label>
+          <input
+            type="text"
+            id="sunday-plan"
+            name="sunday-plan"
+            placeholder="Enter Sunday plan"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="monday-plan">Monday Plan:</label>
+          <input
+            type="text"
+            id="monday-plan"
+            name="monday-plan"
+            placeholder="Enter Monday plan"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="tuesday-plan">Tuesday Plan:</label>
+          <input
+            type="text"
+            id="tuesday-plan"
+            name="tuesday-plan"
+            placeholder="Enter Tuesday plan"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="wednesday-plan">Wednesday Plan:</label>
+          <input
+            type="text"
+            id="wednesday-plan"
+            name="wednesday-plan"
+            placeholder="Enter Wednesday plan"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="thursday-plan">Thursday Plan:</label>
+          <input
+            type="text"
+            id="thursday-plan"
+            name="thursday-plan"
+            placeholder="Enter Thursday plan"
+          />
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
