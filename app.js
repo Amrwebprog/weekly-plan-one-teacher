@@ -2,7 +2,7 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.14.1/firebas
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
 import { addDoc, collection, getFirestore } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
 
-const firebaseConfig = {
+/* const firebaseConfig = {
     apiKey: "AIzaSyB5Lg4TVQO4sNE4rYuzi0NzEnZm4ZSMzEk",
     authDomain: "weekly-plan-one.firebaseapp.com",
     projectId: "weekly-plan-one",
@@ -15,7 +15,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-const db = getFirestore(app);
+const db = getFirestore(app); */
 
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('.weekly-plan-form');
